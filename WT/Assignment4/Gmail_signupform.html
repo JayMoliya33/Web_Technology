@@ -1,0 +1,293 @@
+<html>
+
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link href="bootstrap-4.3.1-dist/js/bootstrap.min.js" />
+    <link href="bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js" />
+
+    <style>
+        body {
+            font-family: Open Sans;
+        }
+
+        .parent {
+            height: 100px;
+        }
+
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .signin {
+            float: right;
+            display: inline-block;
+        }
+
+        .signin button {
+            padding: 3px 10px;
+        }
+
+        .main {
+            margin: 1% 8%;
+            overflow: auto;
+        }
+
+        .sectiontitle {
+            color: red;
+        }
+        
+        .leftsection {
+            float: left;
+            display: inline;
+            width: 60%;
+        }
+
+        .rightsection {
+            width: 40%;
+            float: right;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        select {
+            width: 50%;
+        }
+
+        .loc {
+            width: 100%;
+        }
+
+        .shortip {
+            width: 24%;
+        }
+
+        .medip {
+            width: 49.5%;
+        }
+
+        .longip {
+            width: 100%;
+        }
+
+        [type="checkbox"] {
+            margin-top: 15px;
+        }
+
+        input,
+        select {
+            padding: 3px 8px;
+            border-radius: 2px;
+            border: 1px solid grey;
+        }
+
+        .submitbtn {
+            text-align: end;
+            padding: 10px;
+        }
+
+        .section1 {
+            vertical-align: text-top;
+        }
+
+        .indiv {
+            display: inline-block;
+            width: 49%;
+            font-size: 13px;
+            vertical-align: text-top;
+        }
+        .lsec2, .lsec3 {
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 50px;
+        }
+        .footer ul {
+            font-size: 12px;;
+            float: left;
+            list-style-type: none;
+        }
+        .footer ul li {
+            float: left;
+            padding-right: 20px;
+        }
+        .footer ul li:nth-child(1) {
+            color: gray;
+        }
+        .footer ul li a{
+            color: black;
+        }
+        .footer select {
+            font-size: 12px;
+            float: right;
+            width: 200px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="logo">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/gmail-logo-png-transparent.png" width="100px;" />
+            </div>
+            <div class="signin">
+                <button class="btn btn-light">Sign In</button>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="sectiontitle">
+                <h5>Create a new Google Account</h5>
+            </div>
+            <div class="leftsection">
+                <div class="lsec1">
+                    <div class="indiv">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLgOt9RsWBkHtRJxEnNmoS5CYKr2ALN84HZmAihbSWm8Sv6-P0" width="320px;" />
+                    </div>
+                    <div class="indiv">
+                        <h5>Your Google account is more than just a Gmail.</h5>
+                        <p> Talk, chat, share, schedule, store, organize, collaborate, discover and create. Use Google products from Gmail to Google+ to YouTube, view your search history, all one username and password, all backed up all the time and easy to find at (you guessed it) Google.com</p>
+                    </div>
+                </div>
+                <div class="lsec2">
+                    <div class="indiv">
+                        <img src="https://suddl.com/wp-content/uploads/2019/06/How-to-turn-off-Google-Maps%E2%80%99-many-notifications3.png" width="320px;" />
+                    </div>
+                    <div class="indiv">
+                        <h5>Take it all with you.</h5>
+                        <p>A Google account lets you access all your stuff -- Gmail, photos and more -- from any device. Search bytaking pictures, or by voice. Get free turn-by-turn navigation, upload your pictures automatically, and even buy things with your phone using Google Wallet.</p>
+                    </div>
+                </div>
+                <div class="lsec3">
+                    <div class="indiv">
+                        <img src="https://pngimage.net/wp-content/uploads/2018/06/google-drive-png-9.png" width="320px;" />
+                    </div>
+                    <div class="indiv">
+                        <h5>Share a little. Or share a lot.</h5>
+                        <p>Share selectively with friends, family (or evene your boss) on Google+. Start a video hangout with friends, text a group all at once, or just follow people who fascinate you. Your call.</p>
+                    </div>
+                </div>
+                <div class="lsec4">
+                    <div class="indiv">
+                        <img src="https://pngimage.net/wp-content/uploads/2018/06/google-docs-png-1.png" width="320px;" />
+                    </div>
+                    <div class="indiv">
+                        <h5>Work in the future.</h5>
+                        <p>Get a jump on the next era of doing, well, everything. Watch as colleagues or partners post a photo, update a spreadsheet, or improve a paragraph, in real-time, from 1,000 miles away. Google Docs is free with Google Account.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightsection">
+                <form autocomplete="off">
+                    <label>Name</label>
+                    <input class="medip" type="text" name="firstname" placeholder="First" />
+                    <input class="medip" type="text" name="lastname" placeholder="Last" />
+
+                    <label>Choose your username</label>
+                    <input class="longip" type="email" name="email" />
+
+                    <label>Create a password</label>
+                    <input class="longip" type="password" name="passwd" />
+
+                    <label>Confirm your password</label>
+                    <input class="longip" type="password" name="confpasswd" />
+
+                    <label>Birthday</label>
+                    <select name="dobmonth">
+                        <option selected disabled>Month</option>
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                        <option value="may">May</option>
+                        <option value="jun">June</option>
+                        <option value="jul">July</option>
+                        <option value="aug">August</option>
+                        <option value="sep">September</option>
+                        <option value="oct">October</option>
+                        <option value="nov">November</option>
+                        <option value="dec">December</option>
+                    </select>
+                    <input class="shortip" type="text" name="dobday" placeholder="Day" />
+                    <input class="shortip" type="text" name="dobyear" placeholder="Year" />
+
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option selected disabled>I am...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label>Mobile phone</label>
+                    <input class="longip" type="text" name="mobno" pattern="[0-9]{10}" />
+
+                    <label>Your current email address</label>
+                    <input class="longip" type="email" name="email" />
+
+                    <label>Prove you're not a robot</label>
+                    <input type="checkbox" />
+                    <span>Skip this verification ( phone verification may be required )</span>
+                    <img src="https://www.qualtrics.com/m/assets/support/wp-content/uploads/2018/06/captcha-v2-1.png" width="425px" style="display: block;" />
+
+                    <label>Location</label>
+                    <select name="location" class="loc">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                    </select>
+                    <br />
+                    <br />
+                    <input type="checkbox" />
+                    <span>I agree to the Google Terms of Services and Privacy Policy</span>
+
+                    <br />
+                    <input type="checkbox" />
+                    <span>Google may use my account information to personalize +1's on current and ads on non-Google websites. About personalize.</span>
+
+                    <div class="submitbtn">
+                        <button class="btn btn-primary">Next Step</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <ul>
+                <li>&copy; 2013 Google</li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <select>
+                <option>Hindi</option>
+                <option>English (United States)</option>
+                <option>English (UK)</option>
+                <option>Spanish</option>
+                <option>French</option>
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>
